@@ -4,7 +4,6 @@
 /*------- Common Style --------- */
 body{
     font-family: 'Work Sans', sans-serif;
-    background-color: rgba(255, 144, 14, 0.1); ;
     margin: 0px;
 }
 
@@ -14,6 +13,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: rgba(255, 144, 14, 0.1); ;
 }
 .nav{
     display: grid;
@@ -101,11 +101,16 @@ body{
 .main{
     background-color: white;
     padding-top: 50px;
+    margin: 0px 130px;
 }
-
+.main-area{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 .main-header-area{
     background-color: white;
-    margin-left: 100px;
+   
 }
 .main-first-area{
     display: grid;
@@ -115,6 +120,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    margin-bottom: 130px;
 }
 .main-first-img{
     width: 330px;
@@ -124,12 +130,86 @@ body{
 .main-first-img img{
     width: 100%;
 }
+.main-second-area{
+    padding-left: 50px;
+    margin-top: 105px;
+    padding-bottom: 16px;
+}
 .main-second-title-text{
     font-weight: 700;
     font-size: 45px;
     color: #131313;
 }
+.main-second-tex{
+    font-size: 16px;
+    color: font-size: 16px;;
+}
+.btn-main{
+    width: 180px;
+    background-color:#FF900E ;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-align: center; 
+    padding: 21px;
+}
 
+.blog-area{
+    background-color: #FFFFFF;
+    margin: 0px 73px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.blog-left-tittle{
+    border-left: 4px solid #FF900E;
+}
+.blog-left-text{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+}
+.blog-left-para{
+    margin-bottom: 37px;
+}
+.blog-left-header{
+    margin: 11px 0px;
+}
+.blog-left-extra-text{
+    margin: 0px;
+    padding-bottom: 30px;
+}
+.blog-right{
+    width: 560px;
+}
+.blog-right img{
+    width: 100%;
+}
+.experience{
+    width: 340px;
+    background-color: #FF900E;
+    padding: 24px 0px;
+    width: 293px;
+    height: 76px;
+    border-radius: 7px;
+    right: 70px;
+    position: relative;
+    bottom: 106px;
+}
+.experience h2{
+    margin: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.experience p{
+     margin: 0px;
+     text-align: center;
+     color: #FFFFFF;
+}
 /* Main Area End ------------------------------
 ------------------------------------------------- */
 
@@ -141,18 +221,25 @@ body{
 
 /* Header Area Sart */
 @media only screen and (max-width: 576px){
+    .main{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
     .nav{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
+        margin: 0px;
     }    
     .nav-ul{
         display: grid;
         grid-row-gap:7px;
         margin-top: 0px;
+        padding-right
     }
     .title-text .nav-text {
         margin-right: 0px;
+        text-align: center;
     }
     .header-box{
         margin-top:0px;
@@ -164,5 +251,39 @@ body{
     .banner-img{
         padding: 0px 10px;
     }
+    .main-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .main-first-area {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-second-area{
+        padding: 11px;
+        margin-top: 0px;
+    }
+    .btn-main{
+        margin: 0px 56px;
+    }
+    .blogs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .blog-area{
+        margin: 0px;
+    }
+    .blog-left{
+        margin: 0px 18px;
+    }
+    .blog-right {
+        width: 100%;
+        padding-left: 6px;
+    }
+    .blog-area img{
+        width: 97%;
+    }
 }
+
 /* Header Area End */
