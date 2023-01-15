@@ -93,6 +93,22 @@ body{
 .first-img img{
         width: 100%;
 }
+.sponser-text{
+    width: 100%;
+}
+.sponser-header{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 0px;
+
+}
+.sponser-pra{
+    text-align: center;
+    font-size: 16px;
+    color: #727272;
+}
 /*--------------- Header Style End  
 ----------------------------------------------------*/
 
@@ -229,6 +245,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 117px;
 }
 
 .item-box{
@@ -258,15 +275,51 @@ body{
 .item-box-text{
     margin-top: 65px;
 }
+.sponser-pra{
+    margin-bottom: 50px;
+}
+.sponser-list-img{
+    width: 165px;
+    height: 50px;
+}
+
+.sponser-list img{
+    width: 100%;
+    height: auto;
+}
+.sponser-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ #amazon-icon{
+    margin-top: 10px;
+}
+#figma-icon{
+    margin-top: 10px;
+}
 /* Article Section End---------------------
 --------------------------------*/
 
 
+/* Footer Area  */
+.footer{
+    background-color:#FFF4E7;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 200px;
+}
+.footer-text{
+  text-align: center;
+  font-size: 20px;
+  color: #424242;
+  padding: 35px 0px;
+
+}
 
 /*-------------------------- Css Media Queries-------
 ----------------------------------------------------- */
 
-/* Header Area Sart */
 @media only screen and (max-width: 576px){
     .main{
         margin-left: 0px;
@@ -347,6 +400,12 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .sponser-list{
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 }
